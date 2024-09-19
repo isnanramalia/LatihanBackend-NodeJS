@@ -4,7 +4,24 @@ const requestListener = (request, response) => {
     response.setHeader('Content-Type', 'text/html');
  
     response.statusCode = 200;
-    response.end('<h1>Halo HTTP Server!</h1>');
+    
+    const {method} = request;
+
+    if(method === 'GET'){
+        response.end('<h1>ini adalah method GET</h1>');
+    }
+
+    if(method === 'POST'){
+        response.end('<h1>ini adalah method POST</h1>');
+    }
+
+    if(method === 'PUT'){
+        response.end('<h1>ini adalah method PUT</h1>');
+    }
+
+    if(method === 'DELETE'){
+        response.end('<h1>ini adalah method DELETE</h1>');
+    }
 };
  
  
