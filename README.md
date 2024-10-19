@@ -17,7 +17,7 @@ Untuk menginstall dependencies di atas, jalankan perintah berikut:
 npm init --y
 ```
 ```bash
-npm install nodemon @hapi/hapi nanoid eslint --save-dev
+npm install nodemon @hapi/hapi nanoid@3.3.4 eslint --save-dev
 ```
 
 ## Running
